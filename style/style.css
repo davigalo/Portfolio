@@ -1,5 +1,5 @@
 body {
-    background-color: lightgray;
+    background-color: lightgrey;
     font-family: 'EB Garamond', serif;
 }
 
@@ -17,32 +17,58 @@ body {
 
 }
 
-h1 {
+#tituloPresentacion {
     margin: 0;
     font-size: 3.5rem;
     color: black;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
 
+#parrafoPresentacion {
+    color: black;
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-right: 10%;
+    
 }
 
 h3 {
-    font-size: 2rem; /* Tamaño de fuente grande */
+    font-size: 2rem; 
+    font-weight: 600; 
+    color: #343a40; 
+    margin-top: 10%; 
+    margin-bottom: 5%; 
+    text-align: left; 
+  }
+
+  h4 {
+    font-size: 1.5rem; /* Tamaño de fuente grande */
     font-weight: 600; /* Peso de la fuente más fuerte */
-    color: #343a40; /* Color oscuro que combina con el tema de Bootstrap */
-    margin-top: 30px; /* Espacio superior para separarlo de otros elementos */
-    margin-bottom: 20px; /* Espacio inferior */
-    text-align: left; /* Alineación a la izquierda para hacer sinergia con el nav */
+    color: black; /* Color oscuro que combina con el tema de Bootstrap */
+    margin-top: 3%; /* Espacio superior para separarlo de otros elementos */
+    margin-bottom: 3%; /* Espacio inferior */
+    text-align: center; /* Alineación a la izquierda para hacer sinergia con el nav */
     letter-spacing: 1px; /* Espaciado entre letras para mejorar la legibilidad */
     padding-bottom: 5px; /* Espaciado adicional debajo del texto */
   }
 
 p {
-    color: black;
-    margin-top: 10%;
-    margin-left: 30%;
-    margin-right: 10%;
     font-size: 1.5rem;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+button{
+    background-color: olive;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+
+}
+
+button:hover {
+    background-color: #287C0D;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .card {
@@ -52,9 +78,61 @@ p {
     border: 5px solid black;
     border-radius: 10px;
     padding: 20px;
+    
     text-align: center;
     position: relative;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    text-align: left;
+}
+
+/*Clases para la funcionalidad de aparecer los componentes poco a poco*/
+
+/*Esta clase se encarga de hacer desaparecer el elemento y desplazarlo*/
+.desaparece {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+/*Esta clase vuelve a hacer aparecer el elemento*/
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*Estas clases manejan los tiempos de transicion*/
+.delay-1 { transition-delay: 0.5s; }
+.delay-2 { transition-delay: 1s; }
+.delay-3 { transition-delay: 1.5s; }
+.delay-4 { transition-delay: 2s; }
+
+.item-lista-customizado {
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    background-color: #808000;
+
+}
+
+.container-footer {
+    width: 100%;
+    display: flex;
+    background-color: #302C2C;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+
+
+.carta-proyecto{
+    padding: 0%;
 }
 
 

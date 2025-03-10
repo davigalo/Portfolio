@@ -11,14 +11,16 @@
     <title>David García López</title>
     <link rel="stylesheet" href="/style/style.css">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
   <body>
     
-    <div class="container-fluid " id="contenedorPresentacion"   >
+    <div class="desaparece  container-fluid " id="contenedorPresentacion"   >
         
         <nav class="navbar navbar-expand-sm  p-0 " >
 
-            <div class="container-fluid" style="background-color: transparent;">
+            <div class=" desaparece delay-3 container-fluid" style="background-color: transparent;">
                 <a class="navbar-brand" href="#" onclick="location.reload();">
                     <button class="btn border-0 bg-transparent p-0">
                         <img class="rounded-circle" src="/imgs/Logo_DGL.webp" alt="Logo DGL" width="50" height="50">
@@ -27,21 +29,25 @@
                 <!-- Links -->
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Link 1</a>
+                  <a class="nav-link text-white contenedor-iconos" href="#"><i class="fa-brands fa-github"></i></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Link 2</a>
+                  <a class="nav-link text-white contenedor-iconos" href="#"><i class="fa-brands fa-linkedin"></i></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Link 3</a>
+                  <a class="nav-link text-white contenedor-iconos" href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="#">CV</a>
                 </li>
               </ul>
             </div>
           
           </nav>
-        <h1 id="TituloPresentacion" class="mt-5">Hola, soy David</h1>
-        <p id="Parrafo presentación" class=" mt-5">
-           Estudiante de ingeniería informática de último curso, apasionado por el análisis de datos  y el desarrollo de software.
+        <h1 id="tituloPresentacion" class="desaparece mt-5">Hola, soy David</h1>
+        <p id="parrafoPresentacion" class="desaparece delay-1 mt-5">
+           Estudiante de ingeniería informática de último curso, interesado por el análisis de datos  y el desarrollo de software.
         </p>
        
 
@@ -49,57 +55,55 @@
   
    
 
-    <div class="container mt-5">
-        <h3>Sobre mi</h3>
-        <p>
+    <div class="  container mt-5">
+        <h3 class="desaparece delay-1">Sobre mi</h3>
+        <p class="desaparece delay-2">
            Actualmente me encuentro cursando el último curso de ingeniería informática en Sistemas de Información en la Universidad Pablo de Olavide.
            Gracias a mi formación académica y a mi propia experiencia adquirida de manera autodidacta, he desarrollado habilidades en áreas como desarrollo web, análisis de datos y gestión,desarrollo y manejo de sistemas ERP, especialmente Odoo.
         </p>
-       <div class="row">
+       <div class="desaparece delay-3  row">
         <div class="col">
             <h3 class="mb-3 mt-5">Experiencia de trabajo</h3>
 
             <div class="card mb-3" >
                 <div class="card-body">
            <div class="mx-3">
-            <h4>Ninguna socio</h4>
-            <div><strong>2020-Actual</strong></div>
-            Trabaje fabricando sueños y esperanzas
-           </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Desarrollando apps para curar almas</li>
-                <li class="list-group-item">Creando webs</li>
-                <li class="list-group-item">Creando APIs para el amor</li>
-            </ul>
+            <h4>Game Master</h4>
+            <div><strong>2020-2022</strong></div>
+            <p>            Trabaje en un scape room como Game Master en cumpleaños y comuniones. En ese entorno pude desarrollar las siguientes soft skills:
+            </p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item rounded mb-3 item-lista-customizado">Trabajo en equipo</li>
+            <li class="list-group-item rounded mb-3 item-lista-customizado">Comunicación</li>
+            <li class="list-group-item rounded mb-3 item-lista-customizado">Responsabilidad con el trabajo</li>
+        </ul>
           </div>
          </div>
 
          <div class="card">
             <div class="card-body">
-       <div class="mx-3">
-        <h4>Ninguna socio</h4>
-        <div><strong>2020-Actual</strong></div>
-        Trabaje fabricando sueños y esperanzas
-       </div>
+        <h4>Camarero</h4>
+       <p>He desempeñado la función de camarero en los siguientes establecimientos:</p> 
+       
         <ul class="list-group list-group-flush mt-2">
-            <li class="list-group-item">Desarrollando apps para curar almas</li>
-            <li class="list-group-item">Creando webs</li>
-            <li class="list-group-item">Creando APIs para el amor</li>
+            <li class="list-group-item rounded mb-3 item-lista-customizado">Bodeguita Alberto, <strong style="color : #36dcc2;">verano de 2018</strong> </li>
+            <li class="list-group-item rounded mb-3 item-lista-customizado">Bar la paraíta, <strong style="color: #36dcc2;">verano de 2019</strong></li>
         </ul>
       </div>
      </div>
 
         </div>
-        <div class="col mb-3 mt-5">
+        <div class="contenedor-iconos col mb-3 ">
             <h3>Skills</h3>
             <div class="card mb-3" >
                 <div class="card-body">
            <div class="mx-3">
             <h4>Frontend</h4>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JS</li>
+            <ul class="list-group list-group-flush mt-2">
+                <li class="list-group-item rounded mb-3 item-lista-customizado"><i class=" fa-brands fa-html5"></i></li>
+                <li class="list-group-item rounded mb-3 item-lista-customizado"><i class=" fa-brands fa-css3-alt"></i></li>
+                <li class="list-group-item rounded mb-3 item-lista-customizado"><i class=" fa-brands fa-square-js"></i></li>
             </ul>
             </div>
             </div>
@@ -108,13 +112,13 @@
                 <div class="card-body">
            <div class="mx-3">
             <h4>Backend</h4>
-            <ul>
-                <li>Java</li>
-                <li>Python</li>
-                <li>Spring</li>
-                <li>MySQL</li>
-                <li>MongoDB</li>
-                <li>API's</li>
+            <ul class="list-group list-group-flush mt-2 ">
+                <li class="list-group-item rounded mb-3 item-lista-customizado "><i class=" fa-brands fa-java"></i></li>
+                <li class="list-group-item rounded mb-3 item-lista-customizado"><i class=" fa-brands fa-python"></i></li>
+                <li class="list-group-item rounded mb-3 item-lista-customizado">Spring</li>
+                <li class="list-group-item rounded mb-3 item-lista-customizado">SQL  <i class="ms-5 fa-solid fa-database"></i></li>
+                <li class="list-group-item rounded mb-3 item-lista-customizado">MongoDB</li>
+                <li class="list-group-item rounded mb-3 item-lista-customizado">Manejo de API's</li>
             </ul>
             </div>
             </div>
@@ -124,40 +128,73 @@
         </div>
        </div> 
     
-       <div class="container mt-5">
-        <h3>Proyectos</h3>
-        <div class="row">
+       <div class=" container mt-5">
+        <h3 class="desaparece delay-1" >Proyectos</h3>
+        <div class=" desaparece delay-2 row">
             <div class="col-lg-3">
-                <div class="card">
-                    <img src="" alt="" class="card-top">
+                <div class="carta-proyecto card">
+                    <img  src="/imgs/1366_2000.jpg" alt="Imagen decorativa código" class="card-img-top m-0 p-0">
                     <div class="card-body">
-                        <h5 class="card-title">Medical Startup</h5>
-                        <div class="card-text">Si lo hice vale</div>
-                    </div>
+                        <h4 class="card-title">Libreria</h4>
+                        <div class="card-text">Este es un proyecto el cúal empecé para aprender el framework de Java, Spring. Contiene las funcionalidades CRUD para la gestión de un portal de una biblioteca virtual, en un futuro pretendo implementar búsqueda indexada para encontrar los libros que deseé el usuario.</div>
+                        <button href="#" class="mt-3 mb-3 btn ">Accede al proyecto</button>
+
+                       <div class="card-text"><i class=" fa-brands fa-java me-3"></i> <i class="fa-solid fa-database me-3"></i> Spring</div> 
+
+                      </div>
                 </div>
             </div>
+
+            <div class="col-lg-3">
+              <div class="carta-proyecto card">
+                  <img src="/imgs/Imagen_Tetris.webp" alt="Imagen descriptiva tetris" class="card-img-top">
+                  <div class="card-body">
+                      <h4 class="card-title"> Tetris</h4>
+                      <div class="card-text">Este proyecto lo inicié con el objetivo de javascript vanilla, se trata de un clon de Tetris. Actualmente continúa en desarrollo.</div>
+                      <button href="#" class="mt-3 mb-3 btn ">Accede al proyecto</button>
+
+                      <div class="card-text"><i class=" fa-brands fa-html5"></i> <i class=" fa-brands fa-css3-alt"></i> <i class="fa-brands fa-square-js me-3"></i></div> 
+
+                    </div>
+              </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="carta-proyecto card">
+                <img src="/imgs/chess-background-na0c3ufv4kcfdcmk.jpg" alt="Imagen descriptiva de ajedrez" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title">Ajedrez</h4>
+                    <div class="card-text">Aquí traté de mejorar mis habilidades con java, intentando replicar un clon del ajedrez. Actualmente se encuentra parado debido al calendario apretado de la universidad, pero pretendo retomarlo y aplicarle una interfaz gráfica </div>
+                    <button href="#" class="mt-3 mb-3 btn ">Accede al proyecto</button>
+
+                      <div class="card-text"><i class=" fa-brands fa-java"></i> </div> 
+
+                  </div>
+            </div>
+        </div>
         </div>
        </div>
 
 
        <div class="container mt-5">
-        <h3>Contactame</h3>
-        <div class="row">
+        <h3 class="desaparece delay-1">Contáctame</h3>
+        <div class="desaparece delay-2 row">
             <div class="col-lg-12">
                 <div class="card">
                     <img src="" alt="" class="card-top">
                     <div class="card-body">
-                        <h5 class="card-title">Envíame una pregunta o una proposición sin compromiso</h5>
-                        <form action="">
-                            <div class="form-group
-                            ">
-                                <label for="name">Tu nombre</label>
-                                <input type="text" class="form-control" id="name">
+                        <h4 class="card-title">Envíame una pregunta o una proposición sin compromiso</h4>
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <label class="form-label w-50 " for="name">Tu nombre</label>
+                                <input type="text" class="form-control w-50" id="name">
                                 <label for="email">Tu email</label>
-                                <input type="email" class="form-control" id="email">
+                                <input  type="email" class="form-control w-50" id="email">
                                 <label for="mensaje">Tu mensaje</label>
-                                <textarea class="form-control" name="mensaje" id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
-                            </div>
+                                <textarea class="form-control " name="mensaje" id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
+                                <div class="text-center mt-3">
+                                  <button type="submit" class="btn  btn-lg px-4 rounded-pill shadow">Enviar</button>
+                              </div>                              </div>
                 </div>
             </div>
         </div>
@@ -169,23 +206,30 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
   <footer>
       
 
-      <div class="card mt-5">
-        <div class="card-body">
-            <div class="card-title">Redes</div>
-            <div class="card-text">
-                <a href="#">Twitter</a>
-                <a href="#">Linkedin</a>
-                <a href="#">Github</a>
+     
+      <div class="container-footer container-fluid  mt-5">
+        <p style="font-size: 1rem; color:white;"> © David García López all rights reserved</p>
+        <div class=" navbar-expand-sm  p-0">
+          
+          <ul class="ms-3 navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white contenedor-iconos" href="#"><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white contenedor-iconos" href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white contenedor-iconos" href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
         </div>
-      </div>
-      </div>
-      <div class="container mt-5">
-        <p> © David García López</p>
     </div>
   </footer>
+
+  <script src="/js/script.js"></script>
 </html>
