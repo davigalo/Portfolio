@@ -14,32 +14,33 @@
   </head>
   <body>
     
-    <div id="contenedorPresentacion"   >
+    <div class="container-fluid " id="contenedorPresentacion"   >
         
-        <nav class="navbar navbar-expand-lg navbar-light bg-grey">
-            <div class="">
-                <!-- Botón para mostrar/ocultar el menú en pantallas pequeñas -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- Menú de navegación (con la clase collapse para que se oculte en pantallas pequeñas) -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
+        <nav class="navbar navbar-expand-sm  p-0 " >
+
+            <div class="container-fluid" style="background-color: transparent;">
+                <a class="navbar-brand" href="#" onclick="location.reload();">
+                    <button class="btn border-0 bg-transparent p-0">
+                        <img class="rounded-circle" src="/imgs/Logo_DGL.webp" alt="Logo DGL" width="50" height="50">
+                    </button>
+                </a>
+                <!-- Links -->
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Link 1</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Link 2</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Link 3</a>
+                </li>
+              </ul>
             </div>
-        </nav>
-        <h1 class="mt-5">Hola, soy David</h1>
-        <p class=" mt-5">
+          
+          </nav>
+        <h1 id="TituloPresentacion" class="mt-5">Hola, soy David</h1>
+        <p id="Parrafo presentación" class=" mt-5">
            Estudiante de ingeniería informática de último curso, apasionado por el análisis de datos  y el desarrollo de software.
         </p>
        
@@ -51,11 +52,12 @@
     <div class="container mt-5">
         <h3>Sobre mi</h3>
         <p>
-            Soy un programador apasionado por la tecnología y el desarrollo de software. Me gusta aprender cosas nuevas y compartir conocimientos.
+           Actualmente me encuentro cursando el último curso de ingeniería informática en Sistemas de Información en la Universidad Pablo de Olavide.
+           Gracias a mi formación académica y a mi propia experiencia adquirida de manera autodidacta, he desarrollado habilidades en áreas como desarrollo web, análisis de datos y gestión,desarrollo y manejo de sistemas ERP, especialmente Odoo.
         </p>
        <div class="row">
         <div class="col">
-            <h3 class="mb-3">Experiencia de trabajo</h3>
+            <h3 class="mb-3 mt-5">Experiencia de trabajo</h3>
 
             <div class="card mb-3" >
                 <div class="card-body">
@@ -88,7 +90,7 @@
      </div>
 
         </div>
-        <div class="col">
+        <div class="col mb-3 mt-5">
             <h3>Skills</h3>
             <div class="card mb-3" >
                 <div class="card-body">
@@ -141,7 +143,7 @@
        <div class="container mt-5">
         <h3>Contactame</h3>
         <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-12">
                 <div class="card">
                     <img src="" alt="" class="card-top">
                     <div class="card-body">
